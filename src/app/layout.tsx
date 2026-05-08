@@ -11,6 +11,7 @@ import { Open_Sans } from "next/font/google";
 import { Mulish } from "next/font/google";
 import { Libre_Baskerville } from "next/font/google";
 import { Public_Sans } from "next/font/google";
+import { Figtree } from "next/font/google";
 
 
 
@@ -29,8 +30,9 @@ export const metadata: Metadata = {
 
 
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",
+
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
@@ -42,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${publicSans.variable} antialiased`}>
+        <body className={`${figtree.variable} antialiased`}>
           <Tag />
           {children}
           <script
