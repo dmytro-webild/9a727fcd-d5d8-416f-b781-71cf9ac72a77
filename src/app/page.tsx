@@ -42,7 +42,7 @@ export default function LandingPage() {
         {
           name: "تواصل معنا",          id: "contact"},
       ]}
-      brandName="CitiPoint"
+      brandName="CitiPoint Zayed Heights"
     />
   </div>
 
@@ -197,7 +197,7 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterLogoReveal
-      logoText="B115 CitiPoint"
+      logoText="B115 CitiPoint Zayed Heights"
       leftLink={{
         text: "سياسة الخصوصية",        href: "#"}}
       rightLink={{
