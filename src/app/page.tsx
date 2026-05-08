@@ -48,7 +48,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroLogo
-      logoText="B115 CitiPoint Zayed Heights"
+      logoText="CitiPoint Zayed Heights"
       description="عيش الهدوء والفخامة في قلب الشيخ زايد. شقق واسعة، أمان كامل، وأسعار مميزة في مجتمع سكني واعد."
       buttons={[
         {
