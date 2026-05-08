@@ -13,6 +13,7 @@ import { Libre_Baskerville } from "next/font/google";
 import { Public_Sans } from "next/font/google";
 import { Figtree } from "next/font/google";
 import { Source_Sans_3 } from "next/font/google";
+import { Raleway } from "next/font/google";
 
 
 
@@ -33,8 +34,9 @@ export const metadata: Metadata = {
 
 
 
-const sourceSans3 = Source_Sans_3({
-  variable: "--font-source-sans-3",
+
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
 });
 
@@ -46,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${sourceSans3.variable} antialiased`}>
+        <body className={`${raleway.variable} antialiased`}>
           <Tag />
           {children}
           <script
