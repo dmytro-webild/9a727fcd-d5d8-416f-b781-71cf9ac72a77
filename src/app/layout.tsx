@@ -12,6 +12,7 @@ import { Mulish } from "next/font/google";
 import { Libre_Baskerville } from "next/font/google";
 import { Public_Sans } from "next/font/google";
 import { Figtree } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
 
 
@@ -31,8 +32,9 @@ export const metadata: Metadata = {
 
 
 
-const figtree = Figtree({
-  variable: "--font-figtree",
+
+const sourceSans3 = Source_Sans_3({
+  variable: "--font-source-sans-3",
   subsets: ["latin"],
 });
 
@@ -44,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${figtree.variable} antialiased`}>
+        <body className={`${sourceSans3.variable} antialiased`}>
           <Tag />
           {children}
           <script
