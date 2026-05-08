@@ -71,7 +71,7 @@ export default function LandingPage() {
         },
       ]}
       buttonAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/skyscrapers-sunset_1112-1870.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/skyscrapers-sunset_1112-1870.jpg?_wi=1"
       imageAlt="CitiPoint Zayed Heights Hero"
       showDimOverlay={true}
     />
@@ -96,7 +96,7 @@ export default function LandingPage() {
           description: "تصميمات عصرية تتناسب مع كافة الأذواق.",
           bentoComponent: "reveal-icon",
           icon: Home,
-          imageSrc: "http://img.b2bpic.net/free-photo/skyscrapers-sunset_1112-1870.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/skyscrapers-sunset_1112-1870.jpg?_wi=2",
           imageAlt: "24/7 security icon",
         },
         {
