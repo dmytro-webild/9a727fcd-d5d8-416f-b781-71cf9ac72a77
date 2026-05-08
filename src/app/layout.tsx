@@ -14,6 +14,7 @@ import { Public_Sans } from "next/font/google";
 import { Figtree } from "next/font/google";
 import { Source_Sans_3 } from "next/font/google";
 import { Raleway } from "next/font/google";
+import { Manrope } from "next/font/google";
 
 
 
@@ -35,8 +36,13 @@ export const metadata: Metadata = {
 
 
 
-const raleway = Raleway({
-  variable: "--font-raleway",
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -48,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${raleway.variable} antialiased`}>
+        <body className={`${manrope.variable} ${dmSans.variable} antialiased`}>
           <Tag />
           {children}
           <script
