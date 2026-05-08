@@ -22,12 +22,13 @@ export const metadata: Metadata = {
 };
 
 
-const inter = Inter({
-  variable: "--font-inter",
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${inter.variable} ${openSans.variable} antialiased`}>
+        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
           <Tag />
           {children}
           <script
